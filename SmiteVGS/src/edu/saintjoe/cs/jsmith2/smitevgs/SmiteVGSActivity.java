@@ -1,3 +1,4 @@
+// Jared Smith
 package edu.saintjoe.cs.jsmith2.smitevgs;
 
 import android.app.Activity;
