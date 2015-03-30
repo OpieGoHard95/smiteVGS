@@ -47,6 +47,7 @@ public class SmiteVGSActivity extends Form implements HandlesEventDispatching {
 	private HorizontalArrangement line12;
 	private HorizontalArrangement line13;
 	private HorizontalArrangement line14;
+	private HorizontalArrangement line15;
 	
 	// Next our two components
 	private Button Button1;
@@ -63,6 +64,7 @@ public class SmiteVGSActivity extends Form implements HandlesEventDispatching {
 	private Button Button12;
 	private Button Button13;
 	private Button Button14;
+	
 	private Label resultLabel;
 
  // Java Bridger apps all use $define() in place of main()
@@ -88,23 +90,26 @@ public class SmiteVGSActivity extends Form implements HandlesEventDispatching {
      line12 = new HorizontalArrangement(this);
      line13 = new HorizontalArrangement(this);
      line14 = new HorizontalArrangement(this);
+     line15 = new HorizontalArrangement(this);
      
      // Now create the user interface
-     Button1 = new Button(line1,"");
-     Button2 = new Button(line2,"");
-     Button3 = new Button(line3,"");
-     Button4 = new Button(line4,"");
-     Button5 = new Button(line5,"");
-     Button6 = new Button(line6,"");
-     Button7 = new Button(line7,"");
-     Button8 = new Button(line8,"");
-     Button9 = new Button(line9,"");
-     Button10 = new Button(line10,"");
-     Button11 = new Button(line11,"");
-     Button12 = new Button(line12,"");
-     Button13 = new Button(line13,"");
-     Button14 = new Button(line14,"");
-     resultLabel = new Label(line3,"");
+     Button1 = new Button(line1,"A - Attack");
+     Button2 = new Button(line2,"B - Enemy");
+     Button3 = new Button(line3,"C - Careful");
+     Button4 = new Button(line4,"D - Defend");
+     Button5 = new Button(line5,"E - Emotes");
+     Button6 = new Button(line6,"F - MIA");
+     Button7 = new Button(line7,"G - Gank");
+     
+     Button8 = new Button(line9,"H - Help");
+     Button9 = new Button(line10,"I - Incoming");
+     Button10 = new Button(line11,"Q - Ward");
+     Button11 = new Button(line12,"R - Retreat");
+     Button12 = new Button(line13,"S - Self");
+     Button13 = new Button(line14,"T - Returned");
+     Button14 = new Button(line15,"V - Other");
+     
+     resultLabel = new Label(line8,"");
      
      // Let the runtime system know which events to report to the dispatcher
      EventDispatcher.registerEventForDelegation(this, "ButtonClick", "Click");
